@@ -1,4 +1,4 @@
-/*! first-bootstrap-project 2015-01-25 */
+/*! first-bootstrap-project 2015-01-26 */
 /*! first-bootstrap-project 2015-01-24 */
 /*!
  * jQuery JavaScript Library v2.1.3
@@ -11171,6 +11171,19 @@ return jQuery;
 }(jQuery);
 
 (function() {
-
+  $(function() {
+    var activePage, capitalized;
+    capitalized = function(string) {
+      return string.charAt(0).toUpperCase() + string.slice(1);
+    };
+    activePage = capitalized($('body').attr('id'));
+    $("a:contains('" + activePage + "')").parent().addClass('active');
+    $("#venuetravel a:contains('Venue/Travel')").parent().addClass('active');
+    return $('ul.nav li.dropdown').hover(function() {
+      return $('.dropdown-menu', this).fadeIn();
+    }, function() {
+      return $('.dropdown-menu', this).fadeOut('fast');
+    });
+  });
 
 }).call(this);

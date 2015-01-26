@@ -7,13 +7,13 @@
       .navbar.navbar-default
         .container-fluid
           %ul.nav.navbar-nav.navbar-right
-            - pages = ["Home", "Venue/Travel", "Schedule", "Artists", "Register"]
+            - pages = [{name: "Home", url:"index.php"}, {name: "Venue/Travel", url:"venuetravel.php"}, {name: "Schedule", url:"schedule.php"}, {name: "Artists", url:"artists.php"}, {name: "Register", url:"register.php"}]
             - artists = ["Barot Bellingham", "Gerard Donahue", "Jonathan Ferrar", "Lorenzo Garcia", "Hillary Goldwynn", "Hassum Harrod", "Jennifer Jerome", "LaVonne LaRue", "Riley Rewington", "Constance Smith", "Xhou Ta", "Richard Tweed"]
             - for name in pages
-              - if name == "Artists"
+              - if name.name == "Artists"
 
                 %li{class: "dropdown"} 
-                  %a{href: "#", class: "dropdown-toggle", "data-toggle": "dropdown"} = name
+                  %a{href: "#{name.url}", class: "dropdown-toggle", "data-toggle": "dropdown"} = name.name
                     %b{class: "caret"}
                   %ul{class: "dropdown-menu", rol: "menu", "aria-labelledby": "dropdownMenu"}
                     %li
@@ -21,9 +21,8 @@
                     %li.divider
                     - for name in artists
                       %li
-                        %a{href: "artists.php##{name}", tabindex: "-1"} =name
+                        %a{href: "artists.php##{name.slice(0, name.indexOf(" ")) + "_" + name.slice(name.indexOf(" ") + 1)}", tabindex: "-1"} =name
 
               - else
                 %li
-                  %a{href: "#"} = name
-                
+                  %a{href: "#{name.url}"} = name.name              
