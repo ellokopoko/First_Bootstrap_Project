@@ -1,1 +1,7 @@
-%p This is Footer
+%footer.row
+  %nav.col-lg-12
+    %ol.breadcrumb
+      - pages = [{name: "About the Roux Academy", url: "about.php"}, {name: "Privacy Policy", url: "privacypolicy.php"}, {name: "Roux Academy Website", url: "http://rouxacademy.com"}]
+      - for page in pages
+        %li
+          %a{href: "#{page.url}"} =page.name

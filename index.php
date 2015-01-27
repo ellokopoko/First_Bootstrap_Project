@@ -11,6 +11,7 @@
     <section class='container'>
       <div class='content row'>
         <?php include "_/views/layouts/header.php"; ?>
+        <?php include "_/views/layouts/snippet-carousel.php" ?>
         <section class='col col-lg-8 main'></section>
         <section class='col col-lg-4 sidebar'>
           Sidebar

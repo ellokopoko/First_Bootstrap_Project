@@ -103,6 +103,10 @@ module.exports = function(grunt) {
         footer: {
             src: '_/components/views/layouts/footer.haml',
             dest: '_/views/layouts/footer.php'
+        },
+        carousel: {
+            src: '_/components/views/layouts/snippet-carousel.haml',
+            dest: '_/views/layouts/snippet-carousel.php'
         }
 	},
 	less: {
