@@ -12,10 +12,12 @@
       <div class='content row'>
         <?php include "_/views/layouts/header.php"; ?>
         <?php include "_/views/layouts/snippet-carousel.php" ?>
-        <section class='col col-lg-8 main'></section>
-        <section class='col col-lg-4 sidebar'>
-          Sidebar
+        <section class='col col-lg-8 main'>
+          <?php include "_/views/layouts/article-intro.php" ?>
+          <?php include "_/views/layouts/article-about_the_artists.php" ?>
+          <?php include "_/views/layouts/article-about_the_venue.php" ?>
         </section>
+        <section class='col col-lg-4 sidebar'></section>
         <?php include "_/views/layouts/footer.php"; ?>
       </div>
     </section>

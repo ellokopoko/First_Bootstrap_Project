@@ -1,4 +1,4 @@
-/*! first-bootstrap-project 2015-01-26 */
+/*! first-bootstrap-project 2015-01-28 */
 /*! first-bootstrap-project 2015-01-24 */
 /*!
  * jQuery JavaScript Library v2.1.3
@@ -11172,18 +11172,25 @@ return jQuery;
 
 (function() {
   $(function() {
-    var activePage, capitalized;
+    var activePage, capitalized, image, images, img, _i, _len;
     capitalized = function(string) {
       return string.charAt(0).toUpperCase() + string.slice(1);
     };
     activePage = capitalized($('body').attr('id'));
     $("a:contains('" + activePage + "')").parent().addClass('active');
     $("#venuetravel a:contains('Venue/Travel')").parent().addClass('active');
-    return $('ul.nav li.dropdown').hover(function() {
+    $('ul.nav li.dropdown').hover(function() {
       return $('.dropdown-menu', this).fadeIn();
     }, function() {
       return $('.dropdown-menu', this).fadeOut('fast');
     });
+    images = ['seattle_skyline.jpg', 'jewelry_workshop.jpg', 'painting_workshop.jpg', 'pottery_workshop.jpg', 'quicksketch_workshop.jpg'];
+    for (_i = 0, _len = images.length; _i < _len; _i++) {
+      image = images[_i];
+      img = document.createElement('img');
+      img.src = "images/carousel/" + image;
+    }
+    return $(".photogrid [data-toggle='tooltip']").tooltip();
   });
 
 }).call(this);

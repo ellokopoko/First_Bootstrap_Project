@@ -107,6 +107,22 @@ module.exports = function(grunt) {
         carousel: {
             src: '_/components/views/layouts/snippet-carousel.haml',
             dest: '_/views/layouts/snippet-carousel.php'
+        },
+        article_intro: {
+            src: '_/components/views/layouts/article-intro.haml',
+            dest: '_/views/layouts/article-intro.php'
+        },
+        article_article_about_the_artists: {
+            src: '_/components/views/layouts/article-about_the_artists.haml',
+            dest: '_/views/layouts/article-about_the_artists.php'
+        },
+        snippet_artist_photogrid: {
+            src: '_/components/views/layouts/snippet-artist_photogrid.haml',
+            dest: '_/views/layouts/snippet-artist_photogrid.php'
+        },
+        article_about_the_venue: {
+            src: '_/components/views/layouts/article-about_the_venue.haml',
+            dest: '_/views/layouts/article-about_the_venue.php'
         }
 	},
 	less: {

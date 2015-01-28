@@ -14,4 +14,13 @@ $ () ->
       $('.dropdown-menu', this).fadeIn()
     ->
       $('.dropdown-menu', this).fadeOut('fast')
-    ) 
+    )
+    
+    # preLoad images for carousel
+    images = ['seattle_skyline.jpg', 'jewelry_workshop.jpg', 'painting_workshop.jpg', 'pottery_workshop.jpg', 'quicksketch_workshop.jpg']
+    for image in images
+        img = document.createElement('img')
+        img.src = "images/carousel/#{image}"
+    
+    # activated tooltip
+    $(".photogrid [data-toggle='tooltip']").tooltip()

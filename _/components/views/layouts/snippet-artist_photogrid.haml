@@ -1,0 +1,6 @@
+- artists = ["Barot Bellingham", "Gerard Donahue", "Jonathan Ferrar", "Lorenzo Garcia", "Hillary Goldwynn", "Hassum Harrod", "Jennifer Jerome", "LaVonne LaRue", "Riley Rewington", "Constance Smith", "Xhou Ta", "Richard Tweed"]
+
+.component.photogrid.clearfix
+  - for artist in artists
+    %a{href: "artists.php##{artist.slice(0, artist.indexOf(" ")) + "_" + artist.slice(artist.indexOf(" ") + 1)}", "data-tooltip": "true"}
+      %img{src: "images/artists/#{artist.slice(0, artist.indexOf(" ")) + "_" + artist.slice(artist.indexOf(" ") + 1)}_tn.jpg", alt: "Photo of #{artist}", "data-toggle": "tooltip", "data-original-title": "#{artist}"}

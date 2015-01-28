@@ -1,4 +1,4 @@
-/*! first-bootstrap-project 2015-01-25 */
+/*! first-bootstrap-project 2015-01-28 */
 /*! first-bootstrap-project 2015-01-24 */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
@@ -6545,8 +6545,10 @@ button.close {
   }
 }
 
-/*! first-bootstrap-project 2015-01-25 */
+/*! first-bootstrap-project 2015-01-28 */
 
-
+.photogrid a[data-tooltip^="true"]:hover {
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=sass.css.map */
