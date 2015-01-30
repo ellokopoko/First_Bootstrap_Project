@@ -18,7 +18,17 @@
       img = document.createElement('img');
       img.src = "images/carousel/" + image;
     }
-    return $(".photogrid [data-toggle='tooltip']").tooltip();
+    $(".photogrid [data-toggle='tooltip']").tooltip();
+    return $(".modalphotos img").on('click', function() {
+      var mysrc;
+      $("#modal").modal({
+        show: true
+      });
+      mysrc = this.src.slice(0, this.src.length - 7) + ".jpg";
+      return $("#modalimage").attr('src', mysrc).on('click', function() {
+        return $('#modal').modal('hide');
+      });
+    });
   });
 
 }).call(this);

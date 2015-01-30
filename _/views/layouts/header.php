@@ -71,6 +71,11 @@
           </ul>
         </div>
       </div>
+      <section class='fade modal' id='modal'>
+        <div class='modal-body'>
+          <img id='modalimage' src='' alt='Modal Photo'>
+        </div>
+      </section>
     </header>
   </div>
 </div>

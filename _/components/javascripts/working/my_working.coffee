@@ -26,3 +26,13 @@ $ () ->
     $(".photogrid [data-toggle='tooltip']").tooltip()
     
     # show modals
+    $(".modalphotos img").on('click', ->
+        $("#modal").modal(
+            show: true
+        )
+        
+        mysrc = this.src.slice(0, this.src.length - 7) + ".jpg"
+        $("#modalimage").attr('src', mysrc).on('click', ->
+            $('#modal').modal('hide')
+        )
+    )

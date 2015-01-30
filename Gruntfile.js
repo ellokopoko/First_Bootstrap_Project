@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 				'_/components/javascripts/carousel.js',
 				'_/components/javascripts/collapse.js',
 				'_/components/javascripts/dropdown.js',
-				'_/components/javascripts/madal.js',
+				'_/components/javascripts/modal.js',
 				'_/components/javascripts/popover.js',
 				'_/components/javascripts/scrollspy.js',
 				'_/components/javascripts/tab.js' // End Botstrap
