@@ -17,7 +17,10 @@
           <?php include "_/views/layouts/article-about_the_artists.php" ?>
           <?php include "_/views/layouts/article-about_the_venue.php" ?>
         </section>
-        <section class='col col-lg-4 sidebar'></section>
+        <section class='col col-lg-4 sidebar'>
+          <?php include "_/views/layouts/aside-register.php" ?>
+          <?php include "_/views/layouts/aside-lastyear.php" ?>
+        </section>
         <?php include "_/views/layouts/footer.php"; ?>
       </div>
     </section>

@@ -22,5 +22,7 @@ $ () ->
         img = document.createElement('img')
         img.src = "images/carousel/#{image}"
     
-    # activated tooltip
+    # show tooltip
     $(".photogrid [data-toggle='tooltip']").tooltip()
+    
+    # show modals

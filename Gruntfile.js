@@ -123,6 +123,14 @@ module.exports = function(grunt) {
         article_about_the_venue: {
             src: '_/components/views/layouts/article-about_the_venue.haml',
             dest: '_/views/layouts/article-about_the_venue.php'
+        },
+        aside_register: {
+            src: "_/components/views/layouts/aside-register.haml",
+            dest: "_/views/layouts/aside-register.php"
+        },
+        aside_lastyear: {
+            src: '_/components/views/layouts/aside-lastyear.haml',
+            dest: '_/views/layouts/aside-lastyear.php'
         }
 	},
 	less: {
