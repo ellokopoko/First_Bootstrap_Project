@@ -131,6 +131,10 @@ module.exports = function(grunt) {
         aside_lastyear: {
             src: '_/components/views/layouts/aside-lastyear.haml',
             dest: '_/views/layouts/aside-lastyear.php'
+        },
+        aside_accordion: {
+            src: '_/components/views/layouts/aside-accordion.haml',
+            dest: '_/views/layouts/aside-accordion.php'
         }
 	},
 	less: {

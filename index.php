@@ -20,6 +20,7 @@
         <section class='col col-lg-4 sidebar'>
           <?php include "_/views/layouts/aside-register.php" ?>
           <?php include "_/views/layouts/aside-lastyear.php" ?>
+          <?php include "_/views/layouts/aside-accordion.php" ?>
         </section>
         <?php include "_/views/layouts/footer.php"; ?>
       </div>
