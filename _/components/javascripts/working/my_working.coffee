@@ -36,3 +36,7 @@ $ () ->
             $('#modal').modal('hide')
         )
     )
+    
+    # show day schedule
+    days = ['#sunday', '#monday', '#tuesday', '#wednesday', '#thursday', '#friday', '#saturday']
+    $(days[(new Date).getDay()]).addClass('in')

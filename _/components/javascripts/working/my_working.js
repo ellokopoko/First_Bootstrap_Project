@@ -1,5 +1,5 @@
 $(function() {
-  var activePage, capitalized, image, images, img, _i, _len;
+  var activePage, capitalized, days, image, images, img, _i, _len;
   capitalized = function(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
@@ -18,7 +18,7 @@ $(function() {
     img.src = "images/carousel/" + image;
   }
   $(".photogrid [data-toggle='tooltip']").tooltip();
-  return $(".modalphotos img").on('click', function() {
+  $(".modalphotos img").on('click', function() {
     var mysrc;
     $("#modal").modal({
       show: true
@@ -28,4 +28,6 @@ $(function() {
       return $('#modal').modal('hide');
     });
   });
+  days = ['#sunday', '#monday', '#tuesday', '#wednesday', '#thursday', '#friday', '#saturday'];
+  return $(days[(new Date).getDay()]).addClass('in');
 });

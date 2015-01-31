@@ -1,4 +1,4 @@
-/*! first-bootstrap-project 2015-01-30 */
+/*! first-bootstrap-project 2015-01-31 */
 /*! first-bootstrap-project 2015-01-30 */
 /*!
  * jQuery JavaScript Library v2.1.3
@@ -11497,7 +11497,7 @@ return jQuery;
 
 (function() {
   $(function() {
-    var activePage, capitalized, image, images, img, _i, _len;
+    var activePage, capitalized, days, image, images, img, _i, _len;
     capitalized = function(string) {
       return string.charAt(0).toUpperCase() + string.slice(1);
     };
@@ -11516,7 +11516,7 @@ return jQuery;
       img.src = "images/carousel/" + image;
     }
     $(".photogrid [data-toggle='tooltip']").tooltip();
-    return $(".modalphotos img").on('click', function() {
+    $(".modalphotos img").on('click', function() {
       var mysrc;
       $("#modal").modal({
         show: true
@@ -11526,6 +11526,8 @@ return jQuery;
         return $('#modal').modal('hide');
       });
     });
+    days = ['#sunday', '#monday', '#tuesday', '#wednesday', '#thursday', '#friday', '#saturday'];
+    return $(days[(new Date).getDay()]).addClass('in');
   });
 
 }).call(this);

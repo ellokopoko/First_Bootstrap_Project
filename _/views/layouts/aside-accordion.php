@@ -13,7 +13,7 @@
           </span>
         </a>
       </div>
-      <div class='collapse panel-collapse' id='monday'>
+      <div class='collapse panel-collapse' id='monday' aria-expanded='true'>
         <section class='panel-body'>
           <p>
             The first day of CAC events and exhibits is kicked off under the theme of Art in Full Color. From a demonstration in graffiti art on a wall of the  Rousseau Room, to the exhibit of colorful glazed modern glassware in the Dover Hall, Art in Full Color will get CAC started in full swing!
@@ -34,7 +34,7 @@
           </span>
         </a>
       </div>
-      <div class='collapse panel-collapse' id='tuesday'>
+      <div class='collapse panel-collapse' id='tuesday' aria-expanded='true'>
         <section class='panel-body'>
           <p>
             Water in Art is the theme for the second day, as art students from around the world gather at the Fountain of Intrigue in the gardens of Hotel Contempo to create ice sculptures, and art lecturers discuss the use of water as an art material, and water as an art subject.
@@ -55,7 +55,7 @@
           </span>
         </a>
       </div>
-      <div class='collapse panel-collapse' id='wednesday'>
+      <div class='collapse panel-collapse' id='wednesday' aria-expanded='true'>
         <section class='panel-body'>
           <p>
             From the diversity of pieces in Barot Bellingham's The Un-Collection to the tiny paintings and sculptures of Xhou Ta, Wednesday's sessions will contain unique art like you've never seen before. The funny and whip-smart Rita Ellsworth, MBA, will finish out the day giving practical advice on thriving as a professional artist in The Business of Art.
@@ -76,7 +76,7 @@
           </span>
         </a>
       </div>
-      <div class='collapse panel-collapse' id='thursday'>
+      <div class='collapse panel-collapse' id='thursday' aria-expanded='true'>
         <section class='panel-body'>
           <p>
             Providing definition to abstract art, salvaging recyclables and collectibles for creating mixed media art, and a hands-on lesson in color theory are the hot topics for Thursday's lineup. Join Riley Rudolph Rewington, Constance Olivia Smith, and Hassum Harrod, some of the most talented up-and-coming artists of their generation.
@@ -97,7 +97,7 @@
           </span>
         </a>
       </div>
-      <div class='collapse panel-collapse' id='friday'>
+      <div class='collapse panel-collapse' id='friday' aria-expanded='true'>
         <section class='panel-body'>
           <p>
             Meet the artists and view the art at your own pace on Friday. The day is reserved as an open day to explore on your own, the many art offerings of the conference.

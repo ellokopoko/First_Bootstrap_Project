@@ -135,6 +135,14 @@ module.exports = function(grunt) {
         aside_accordion: {
             src: '_/components/views/layouts/aside-accordion.haml',
             dest: '_/views/layouts/aside-accordion.php'
+        },
+        article_venues: {
+            src: '_/components/views/layouts/article-venues.haml',
+            dest: '_/views/layouts/article-venues.php'
+        },
+        aside_about_the_artists: {
+            src: '_/components/views/layouts/aside-about_the_artists.haml',
+            dest: '_/views/layouts/aside-about_the_artists.php'
         }
 	},
 	less: {
