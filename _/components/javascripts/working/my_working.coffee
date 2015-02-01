@@ -40,3 +40,9 @@ $ () ->
     # show day schedule
     days = ['#sunday', '#monday', '#tuesday', '#wednesday', '#thursday', '#friday', '#saturday']
     $(days[(new Date).getDay()]).addClass('in')
+    
+    # activate schedual tabs
+    $(".tabbable.tabs a[href='" + days[(new Date).getDay()] + "']").tab('show')
+    
+    hash = window.location.hash
+    hash && $(".tabbable.tabs a[href='" + hash + "']").tab('show')

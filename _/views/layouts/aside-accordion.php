@@ -61,7 +61,7 @@
             From the diversity of pieces in Barot Bellingham's The Un-Collection to the tiny paintings and sculptures of Xhou Ta, Wednesday's sessions will contain unique art like you've never seen before. The funny and whip-smart Rita Ellsworth, MBA, will finish out the day giving practical advice on thriving as a professional artist in The Business of Art.
           </p>
           <p>
-            <a class='btn btn-danger btn-small' href='schedule.php#tuesday'>Wednesday's Schedule</a>
+            <a class='btn btn-danger btn-small' href='schedule.php#wednesday'>Wednesday's Schedule</a>
           </p>
         </section>
       </div>
@@ -82,7 +82,7 @@
             Providing definition to abstract art, salvaging recyclables and collectibles for creating mixed media art, and a hands-on lesson in color theory are the hot topics for Thursday's lineup. Join Riley Rudolph Rewington, Constance Olivia Smith, and Hassum Harrod, some of the most talented up-and-coming artists of their generation.
           </p>
           <p>
-            <a class='btn btn-danger btn-small' href='schedule.php#tuesday'>Thursday's Schedule</a>
+            <a class='btn btn-danger btn-small' href='schedule.php#thursday'>Thursday's Schedule</a>
           </p>
         </section>
       </div>
@@ -103,7 +103,7 @@
             Meet the artists and view the art at your own pace on Friday. The day is reserved as an open day to explore on your own, the many art offerings of the conference.
           </p>
           <p>
-            <a class='btn btn-danger btn-small' href='schedule.php#tuesday'>Friday's Schedule</a>
+            <a class='btn btn-danger btn-small' href='schedule.php#friday'>Friday's Schedule</a>
           </p>
         </section>
       </div>

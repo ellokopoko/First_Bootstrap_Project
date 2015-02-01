@@ -1,6 +1,6 @@
 (function() {
   $(function() {
-    var activePage, capitalized, days, image, images, img, _i, _len;
+    var activePage, capitalized, days, hash, image, images, img, _i, _len;
     capitalized = function(string) {
       return string.charAt(0).toUpperCase() + string.slice(1);
     };
@@ -30,7 +30,10 @@
       });
     });
     days = ['#sunday', '#monday', '#tuesday', '#wednesday', '#thursday', '#friday', '#saturday'];
-    return $(days[(new Date).getDay()]).addClass('in');
+    $(days[(new Date).getDay()]).addClass('in');
+    $(".tabbable.tabs a[href='" + days[(new Date).getDay()] + "']").tab('show');
+    hash = window.location.hash;
+    return hash && $(".tabbable.tabs a[href='" + hash + "']").tab('show');
   });
 
 }).call(this);

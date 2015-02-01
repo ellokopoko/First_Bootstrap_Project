@@ -11,16 +11,15 @@
     <section class='container'>
       <div class='content row'>
         <?php include "_/views/layouts/header.php"; ?>
-        <section class='col col-lg-8 main'></section>
-        <section class='col col-lg-4 sidebar'>
-          Sidebar
+        <section class='col col-lg-8 main'>
+          <?php include "_/views/layouts/article-schedule.php" ?>
         </section>
-        <?php include "_/views/layouts/footer.php"; ?>
+        <section class='col col-lg-4 sidebar'>
+          <?php include "_/views/layouts/aside-register.php" ?>
+          <?php include "_/views/layouts/aside-lastyear.php" ?>
+          <?php include "_/views/layouts/aside-about_the_artists.php" ?>
+        </section>
       </div>
     </section>
-    <!-- *
-      <?php include "_/views/layouts/header.php"; ?>
-      <?php include "_/views/layouts/footer.php"; ?>
-     -->
   </body>
 </html>

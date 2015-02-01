@@ -1,5 +1,5 @@
+/*! first-bootstrap-project 2015-02-01 */
 /*! first-bootstrap-project 2015-01-30 */
-/*! first-bootstrap-project 2015-01-24 */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -6545,7 +6545,12 @@ button.close {
   }
 }
 
-/*! first-bootstrap-project 2015-01-28 */
+/*! first-bootstrap-project 2015-01-30 */
+body {
+  margin: 0px;
+}
+
+/*! first-bootstrap-project 2015-01-30 */
 
 .photogrid a[data-tooltip^="true"]:hover {
   text-decoration: none;

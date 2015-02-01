@@ -27,6 +27,7 @@ module.exports = function(grunt) {
         all_js: {
             src: [
                 '_/components/javascripts/_bootstrap.js',
+                '_/components/javascripts/url.js',
                 '_/components/javascripts/my_working.js' // My js compiled from coffee script
             ],
             dest: '_/components/javascripts/_main.js'
@@ -143,6 +144,10 @@ module.exports = function(grunt) {
         aside_about_the_artists: {
             src: '_/components/views/layouts/aside-about_the_artists.haml',
             dest: '_/views/layouts/aside-about_the_artists.php'
+        },
+        article_schedule: {
+            src: '_/components/views/layouts/article-schedule.haml',
+            dest: '_/views/layouts/article-schedule.php'
         }
 	},
 	less: {
