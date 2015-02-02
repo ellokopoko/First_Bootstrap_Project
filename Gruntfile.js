@@ -148,6 +148,14 @@ module.exports = function(grunt) {
         article_schedule: {
             src: '_/components/views/layouts/article-schedule.haml',
             dest: '_/views/layouts/article-schedule.php'
+        },
+        article_artist_list: {
+            src: '_/components/views/layouts/article-artist_list.haml',
+            dest: '_/views/layouts/article-artist_list.php'
+        },
+        article_registration_form: {
+            src: '_/components/views/layouts/article-registration_form.haml',
+            dest: '_/views/layouts/article-registration_form.php'
         }
 	},
 	less: {

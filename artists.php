@@ -7,20 +7,20 @@
     <link href='_/styles/style.min.css' rel='stylesheet' type='text/css'>
     <script src='_/javascripts/main.min.js' type='text/javascript'></script>
   </head>
-  <body id='artists'>
+  <body id='artists' data-spy='scroll' data-target='.scrollspy'>
     <section class='container'>
       <div class='content row'>
         <?php include "_/views/layouts/header.php"; ?>
-        <section class='col col-lg-8 main'></section>
+        <section class='col col-lg-8 main'>
+          <?php include "_/views/layouts/article-artist_list.php" ?>
+        </section>
         <section class='col col-lg-4 sidebar'>
-          Sidebar
+          <?php include "_/views/layouts/aside-register.php" ?>
+          <?php include "_/views/layouts/aside-lastyear.php" ?>
+          <?php include "_/views/layouts/aside-accordion.php" ?>
         </section>
         <?php include "_/views/layouts/footer.php"; ?>
       </div>
     </section>
-    <!-- *
-      <?php include "_/views/layouts/header.php"; ?>
-      <?php include "_/views/layouts/footer.php"; ?>
-     -->
   </body>
 </html>

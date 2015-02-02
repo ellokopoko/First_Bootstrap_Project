@@ -1,0 +1,24 @@
+%section.artistlist
+  #artistindex.row
+    
+    
+    - artists = ["Barot Bellingham", "Gerard Donahue", "Jonathan Ferrar", "Lorenzo Garcia", "Hillary Goldwynn", "Hassum Harrod", "Jennifer Jerome", "LaVonne LaRue", "Riley Rewington", "Constance Smith", "Xhou Ta", "Richard Tweed"]
+    
+    
+    <!-- ScrollSpy Navigation ------------------------>
+    %section.scrollspy.clearfix.col.col-lg-3.hidden-xs
+      %ul.nav.nav-list.affix
+        -for artist in artists
+          %li
+            %a{href: "##{artist.slice(0, artist.indexOf(" ")) + "_" + artist.slice(artist.indexOf(" ") + 1)}"}
+              %span.glyphicon.glyphicon-user
+              = artist
+    <!-- ScrollSpy Navigation ------------------------>
+    
+    
+    <!-- Artist Info -------------------------------->
+    %section.artistinfo.col.col-lg-9
+      -for artist in artists
+        - artist_name_whith_underscore = artist.slice(0, artist.indexOf(" ")) + "_" + artist.slice(artist.indexOf(" ") + 1)
+        <?php include "_/views/layouts/snippet_artist_#{artist_name_whith_underscore}.php" ?>
+    <!-- Artist Info -------------------------------->

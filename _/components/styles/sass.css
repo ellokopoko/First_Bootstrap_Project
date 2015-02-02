@@ -1,7 +1,12 @@
-/*! first-bootstrap-project 2015-02-01 */
+/*! first-bootstrap-project 2015-02-02 */
 
 .photogrid a[data-tooltip^="true"]:hover {
   text-decoration: none;
+}
+
+#modalimage {
+  display: block;
+  margin: auto;
 }
 
 /*# sourceMappingURL=sass.css.map */

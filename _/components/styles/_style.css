@@ -1,5 +1,5 @@
+/*! first-bootstrap-project 2015-02-02 */
 /*! first-bootstrap-project 2015-02-01 */
-/*! first-bootstrap-project 2015-01-30 */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -6545,15 +6545,20 @@ button.close {
   }
 }
 
-/*! first-bootstrap-project 2015-01-30 */
+/*! first-bootstrap-project 2015-02-01 */
 body {
   margin: 0px;
 }
 
-/*! first-bootstrap-project 2015-01-30 */
+/*! first-bootstrap-project 2015-02-02 */
 
 .photogrid a[data-tooltip^="true"]:hover {
   text-decoration: none;
+}
+
+#modalimage {
+  display: block;
+  margin: auto;
 }
 
 /*# sourceMappingURL=sass.css.map */
