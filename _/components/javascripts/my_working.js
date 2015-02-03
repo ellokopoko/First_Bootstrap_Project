@@ -27,13 +27,32 @@
       mysrc = this.src.slice(0, this.src.length - 7) + ".jpg";
       return $("#modalimage").attr('src', mysrc).on('click', function() {
         return $('#modal').modal('hide');
-      });
+      }).addClass('img-thumbnail');
     });
     days = ['#sunday', '#monday', '#tuesday', '#wednesday', '#thursday', '#friday', '#saturday'];
     $(days[(new Date).getDay()]).addClass('in');
     $(".tabbable.tabs a[href='" + days[(new Date).getDay()] + "']").tab('show');
     hash = window.location.hash;
-    return hash && $(".tabbable.tabs a[href='" + hash + "']").tab('show');
+    hash && $(".tabbable.tabs a[href='" + hash + "']").tab('show');
+    $(".abouttheartists img").addClass('img-circle');
+    $('aside.photosfromlastyear img').addClass('img-thumbnail');
+    $('.artistinfo .photogrid img').addClass('img-circle');
+    return $(document).on('scroll', function() {
+      var coordinates_bottom_main_content, el_main, el_window, scroll;
+      el_window = $(window);
+      el_main = $('.main');
+      scroll = el_window.scrollTop();
+      coordinates_bottom_main_content = el_main.offset().top + el_main.outerHeight() - el_window.outerHeight();
+      if (scroll >= coordinates_bottom_main_content) {
+        return $('.scrollspy .nav').css({
+          display: 'none'
+        });
+      } else {
+        return $('.scrollspy ul').css({
+          display: 'block'
+        });
+      }
+    });
   });
 
 }).call(this);

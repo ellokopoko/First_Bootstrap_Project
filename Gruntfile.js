@@ -222,6 +222,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'coffee', 'haml', 'less', 'sass', 'compass', 'watch']);
+  grunt.registerTask('default', ['compass', 'coffee', 'less', 'sass', 'haml', 'concat', 'uglify', 'cssmin', 'watch']);
 
 };

@@ -4,5 +4,5 @@
     Each Featured Artist has an opportunity to speak at the conference to share his or her vision, perspective, and techniques with conference attendees. To get more information about the artists click on one of their photos, or visit our <a href="artists.php">artists</a> page.
   </p>
   <?php include "snippet-artist_photogrid.php" ?>
-  <a class='btn btn-warning' href='artists.php' type='button'>About the artists</a>
+  <a class='btn btn-danger' href='artists.php' type='button'>About the artists</a>
 </aside>

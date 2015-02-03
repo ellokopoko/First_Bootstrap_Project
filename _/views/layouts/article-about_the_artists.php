@@ -1,4 +1,4 @@
-<article>
+<article class='abouttheartists'>
   <h2>
     About the artists
   </h2>

@@ -34,7 +34,7 @@ $ () ->
         mysrc = this.src.slice(0, this.src.length - 7) + ".jpg"
         $("#modalimage").attr('src', mysrc).on('click', ->
             $('#modal').modal('hide')
-        )
+        ).addClass('img-thumbnail')
     )
     
     # show day schedule
@@ -46,3 +46,21 @@ $ () ->
     
     hash = window.location.hash
     hash && $(".tabbable.tabs a[href='" + hash + "']").tab('show')
+    
+    $(".abouttheartists img").addClass('img-circle')
+    $('aside.photosfromlastyear img').addClass('img-thumbnail')
+    $('.artistinfo .photogrid img').addClass('img-circle')
+    
+    $(document).on('scroll', ->
+        el_window = $(window)
+        el_main = $('.main')
+        
+        scroll = el_window.scrollTop()
+        coordinates_bottom_main_content = el_main.offset().top + el_main.outerHeight() - el_window.outerHeight()
+        
+        if scroll >= coordinates_bottom_main_content
+            $('.scrollspy .nav').css(display: 'none')
+        else
+            $('.scrollspy ul').css(display: 'block')
+    )
+    

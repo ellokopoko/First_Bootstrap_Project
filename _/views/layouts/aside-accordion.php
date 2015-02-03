@@ -5,7 +5,7 @@
   </p>
   <div class='accordion panel-group' id='schedule'>
     <!---- Monday --------------------->
-    <div class='panel panel-default'>
+    <div class='panel'>
       <div class='panel-heading'>
         <a class='accordion-toggle' href='#monday' data-toggle='collapse' data-parent='#schedule'>
           <span class='glyphicon glyphicon-calendar'>
@@ -26,7 +26,7 @@
     </div>
     <!---- Monday --------------------->
     <!---- Tuesday --------------------->
-    <div class='panel panel-default'>
+    <div class='panel'>
       <div class='panel-heading'>
         <a class='accordion-toggle' href='#tuesday' data-toggle='collapse' data-parent='#schedule'>
           <span class='glyphicon glyphicon-calendar'>
@@ -47,7 +47,7 @@
     </div>
     <!---- Tuesday --------------------->
     <!---- Wednesday --------------------->
-    <div class='panel panel-default'>
+    <div class='panel'>
       <div class='panel-heading'>
         <a class='accordion-toggle' href='#wednesday' data-toggle='collapse' data-parent='#schedule'>
           <span class='glyphicon glyphicon-calendar'>
@@ -68,7 +68,7 @@
     </div>
     <!---- Wednesday --------------------->
     <!---- Thursday --------------------->
-    <div class='panel panel-default'>
+    <div class='panel'>
       <div class='panel-heading'>
         <a class='accordion-toggle' href='#thursday' data-toggle='collapse' data-parent='#schedule'>
           <span class='glyphicon glyphicon-calendar'>
@@ -89,7 +89,7 @@
     </div>
     <!---- Thursday --------------------->
     <!---- Friday --------------------->
-    <div class='panel panel-default'>
+    <div class='panel'>
       <div class='panel-heading'>
         <a class='accordion-toggle' href='#friday' data-toggle='collapse' data-parent='#schedule'>
           <span class='glyphicon glyphicon-calendar'>
